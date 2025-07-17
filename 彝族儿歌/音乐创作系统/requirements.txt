@@ -1,0 +1,5 @@
+nltk==3.8.1
+pydub==0.25.1
+pretty_midi==0.2.9
+librosa==0.10.1
+tensorflow==2.12.0

@@ -1,0 +1,5 @@
+<view class="welcome-container">
+    <text class="title">欢迎使用彝族儿歌音乐创作系统</text>
+    <text class="desc">这是一个专为创作和探索彝族传统儿歌而设计的工具，包含音色分析、歌词生成等功能。</text>
+    <button class="enter-btn" bindtap="navigateToIndex">进入系统</button>
+</view>

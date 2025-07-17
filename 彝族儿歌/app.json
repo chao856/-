@@ -1,0 +1,2094 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/lyrics_generator/lyrics_generator"
+  ],
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#4B0082",
+    "list": [
+      {
+        "pagePath": "/pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "/pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lyrics_generator/lyrics_generator",
+        "text": "歌词生成"
+      }
+    ]
+  },
+    "navigationBarTitleText": "彝族儿歌音乐创作系统",
+    "navigationBarBackgroundColor": "#FFFFF0",
+    "navigationBarTextStyle": "black"
+  }
+  ],
+  "window": {
+  "tabBar": {
+    "list": [

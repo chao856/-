@@ -1,0 +1,23 @@
+{
+  "libVersion": "3.8.5",
+  "projectname": "%25E9%259F%25B3%25E4%25B9%2590%25E5%2588%259B%25E4%25BD%259C%25E7%25B3%25BB%25E7%25BB%259F",
+  "setting": {
+    "urlCheck": true,
+    "coverView": true,
+    "lazyloadPlaceholderEnable": false,
+    "skylineRenderEnable": false,
+    "preloadBackgroundData": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "compileHotReLoad": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "useStaticServer": false,
+    "useLanDebug": false,
+    "showES6CompileOption": false,
+    "checkInvalidKey": true,
+    "ignoreDevUnusedFiles": true,
+    "bigPackageSizeSupport": false
+  }"fdkwmjeojajmjxoa
+  "
+}

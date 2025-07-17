@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彝族儿歌音乐创作系统</title>
+    <style>
+        :root {
+            --indigo: #4B0082;
+            --ivory: #FFFFF0;
+            --dark-red: #8B0000;
+            --light-indigo: #7D5AB6;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--ivory);
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M20,20 Q30,10 40,20 Q50,30 60,20 Q70,10 80,20" stroke="%234B0082" fill="none" stroke-width="1.5" opacity="0.7"/><path d="M30,40 Q40,30 50,40 Q60,50 70,40" stroke="%234B0082" fill="none" stroke-width="1.5" opacity="0.7"/></svg>'),
+                        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M30,30 Q40,20 50,30 Q60,40 70,30" stroke="%234B0082" fill="none" stroke-width="1.2" opacity="0.6"/><path d="M40,50 Q50,40 60,50 Q70,60 80,50" stroke="%234B0082" fill="none" stroke-width="1.2" opacity="0.6"/></svg>'),
+                        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M20,20 Q30,30 40,20 Q50,10 60,20" stroke="%234B0082" fill="none" stroke-width="1.5" opacity="0.5"/><path d="M30,40 Q40,50 50,40 Q60,30 70,40" stroke="%234B0082" fill="none" stroke-width="1.5" opacity="0.5"/></svg>'),
+                        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M30,30 Q40,40 50,30 Q60,20 70,30" stroke="%234B0082" fill="none" stroke-width="1.2" opacity="0.4"/><path d="M40,50 Q50,60 60,50 Q70,40 80,50" stroke="%234B0082" fill="none" stroke-width="1.2" opacity="0.4"/></svg>'),
+                        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M20,20 Q30,10 40,20 Q50,30 60,20" stroke="%234B0082" fill="none" stroke-width="1.5" opacity="0.3"/><path d="M30,40 Q40,30 50,40 Q60,50 70,40" stroke="%234B0082" fill="none" stroke-width="1.5" opacity="0.3"/></svg>'),
+                        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M20,20 Q30,10 40,20 Q50,30 60,20 Q70,10 80,20" stroke="%234B0082" fill="none" stroke-width="1.5" opacity="0.2"/><path d="M30,40 Q40,30 50,40 Q60,50 70,40" stroke="%234B0082" fill="none" stroke-width="1.5" opacity="0.2"/></svg>'),
+                        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M20,20 Q30,10 40,20 Q50,30 60,20 Q70,10 80,20" stroke="%234B0082" fill="none" stroke-width="1.5" opacity="0.1"/><path d="M30,40 Q40,30 50,40 Q60,50 70,40" stroke="%234B0082" fill="none" stroke-width="1.5" opacity="0.1"/></svg>');
+            background-blend-mode: overlay;
+            background-size: 200px 200px, 150px 150px;
+            background-position: 0 0, 50px 50px;
+            background-repeat: repeat;
+            color: #333;
+        }
+        
+        h1, h2, h3 {
+            color: var(--indigo);
+        }
+        
+        .audio-visualizer {
+            height: 80px;
+            width: 100%;
+            background: linear-gradient(90deg, var(--indigo), var(--light-indigo));
+            margin: 15px 0;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: hidden;
+            border: 2px solid var(--dark-red);
+        }
+        
+        .audio-visualizer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M20,20 Q30,30 40,20 Q50,10 60,20" stroke="white" fill="none" stroke-width="1" opacity="0.3"/></svg>');
+            background-size: 100px 100px;
+            background-repeat: repeat;
+            opacity: 0.5;
+        }
+        
+        .audio-visualizer canvas {
+            z-index: 1;
+        }
+        
+        audio {
+            width: 100%;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        audio::-webkit-media-controls-panel {
+            background-color: var(--light-indigo);
+            border-radius: 8px;
+        }
+        
+        audio::-webkit-media-controls-play-button,
+        audio::-webkit-media-controls-mute-button {
+            background-color: var(--indigo);
+            border-radius: 50%;
+        }
+        
+        .analysis-result {
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            margin-top: 15px;
+            border: 2px solid var(--dark-red);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: auto;
+            min-height: 100px;
+        }
+        
+        .analysis-result::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M10,10 Q20,5 30,10 Q40,15 50,10 Q60,5 70,10 Q80,15 90,10" stroke="%234B0082" fill="none" stroke-width="1" opacity="0.1"/></svg>');
+            background-size: 100px 100px;
+            background-repeat: repeat;
+            opacity: 0.3;
+        }
+        
+        .analysis-result h3 {
+            color: var(--indigo);
+            margin-bottom: 12px;
+            font-size: 1.2em;
+            border-bottom: 1px dashed var(--light-indigo);
+            padding-bottom: 8px;
+        }
+        
+        .analysis-result p {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+        
+        .analysis-result p strong {
+            color: var(--dark-red);
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 200px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        
+        button {
+            padding: 10px 15px;
+            background-color: var(--indigo);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            background-color: var(--light-indigo);
+            transform: translateY(-2px);
+        }
+        
+        input, select {
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>彝族儿歌音乐创作系统</h1>
+        
+        <div>
+            <h2>音色分析</h2>
+            <button id="recordButton">开始录音</button>
+            <button id="stopButton" disabled>停止录音</button>
+            <audio id="audioPlayback" controls></audio>
+            <div class="audio-visualizer" id="audioVisualizer"></div>
+<div id="analysisResult" class="analysis-result" contenteditable="true"></div>
+        </div>
+        
+        <div>
+            <h2>歌词生成</h2>
+            <input type="text" id="theme" placeholder="输入主题">
+            <input type="text" id="prompt" placeholder="输入提示词(可选)">
+            <select id="style">
+                <option value="traditional">传统彝族儿歌</option>
+                <option value="festival">节日儿歌</option>
+                <option value="lullaby">摇篮曲</option>
+                <option value="educational">教育儿歌</option>
+            </select>
+            <button onclick="generateLyrics()">生成歌词</button>
+            <textarea id="lyricsOutput"></textarea>
+        </div>
+        
+        <div>
+            <h2>和弦编排</h2>
+            <textarea id="chordsInput" placeholder="输入歌词进行和弦编排"></textarea>
+            <button onclick="arrangeChords()">编排和弦</button>
+            <textarea id="chordsOutput" readonly></textarea>
+        </div>
+        
+        <div>
+            <button onclick="exportMIDI()">导出MIDI</button>
+        </div>
+    </div>
+
+    <script>
+        // 音频处理相关变量
+        let mediaRecorder;
+        let audioChunks = [];
+        let stream; // 声明媒体流变量
+        
+        // 录音功能
+        document.getElementById('recordButton').addEventListener('click', async () => {
+            try {
+                // 停止现有媒体流
+                if(stream) {
+                    stream.getTracks().forEach(track => track.stop());
+                    stream = null;
+                }
+                
+                stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                mediaRecorder = new MediaRecorder(stream);
+                
+                // 更新界面状态
+                document.getElementById('recordButton').disabled = true;
+                document.getElementById('stopButton').disabled = false;
+                document.getElementById('analysisResult').innerHTML = '<div class="recording-status">录音进行中...</div>';
+                
+                mediaRecorder.ondataavailable = (e) => audioChunks.push(e.data);
+                
+                mediaRecorder.onstop = async () => {
+                    const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                    audioChunks = [];
+                    
+                    // 释放媒体流
+                    if (stream) {
+                        try {
+                            stream.getTracks().forEach(track => track.stop());
+                            stream = null;
+                        } catch (e) {
+                            console.error('媒体流释放错误:', e);
+                        }
+                    }
+                    
+                    const audioUrl = URL.createObjectURL(audioBlob);
+                    document.getElementById('audioPlayback').src = audioUrl;
+                    
+                    // 发送音频数据到服务器分析
+                    const formData = new FormData();
+                    formData.append('audio', audioBlob, 'recording.wav');
+                    
+                    try {
+                        const response = await fetch('/analyze_voice', {
+                            method: 'POST',
+                            body: formData,
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        });
+                        
+                        if (!response.ok) throw new Error(`服务器返回错误：${response.status} ${response.statusText}`);
+                        const result = await response.json();
+                        
+                        // 绘制音频波形
+                        const visualizer = document.getElementById('audioVisualizer');
+                        visualizer.innerHTML = '<canvas id="waveform" width="100%" height="60"></canvas>';
+                        const canvas = visualizer.querySelector('canvas');
+                        const ctx = canvas.getContext('2d');
+                        
+                        // 简单绘制波形示例（实际需解码音频数据）
+                        ctx.fillStyle = '#fff';
+                        ctx.fillRect(0, 0, canvas.width, canvas.height);
+                        ctx.fillStyle = '#4B0082';
+                        for(let i=0; i<100; i++){
+                            ctx.fillRect(i*3, 30 + Math.random()*20 - 10, 2, 20);
+                        }
+                        
+                        // 更详细的音色分析描述
+                        const descriptions = {
+                            'bright': '明亮清晰的音色，适合演唱欢快的儿歌',
+                            'warm': '温暖柔和的音色，适合摇篮曲和抒情歌曲',
+                            'rich': '饱满丰富的音色，适合传统民族风格演唱',
+                            'light': '轻盈活泼的音色，适合教育类儿歌'
+                        };
+                        
+                        const timbreDesc = descriptions[result.timbre] || '独特的音色特征';
+                        const pitchDesc = result.pitchRange.includes('-') ? 
+                            `音域从${result.pitchRange.split('-')[0]}到${result.pitchRange.split('-')[1]}` : 
+                            `主要音高在${result.pitchRange}`;
+                        
+                        document.getElementById('analysisResult').innerHTML = 
+                            `<h3>音色分析报告</h3>
+                            <p><strong>音色特征:</strong> ${result.timbre} - ${timbreDesc}</p>
+                            <p><strong>音调范围:</strong> ${pitchDesc}</p>
+                            <p><strong>建议:</strong> 根据您的音色特点，推荐尝试${result.timbre === 'bright' ? '节日儿歌' : 
+                                result.timbre === 'warm' ? '摇篮曲' : '传统彝族儿歌'}风格</p>`;
+                    } catch (error) {
+                        console.error('分析错误:', error);
+                    document.getElementById('analysisResult').innerHTML = `<h3>分析错误</h3><p>${error.message || '服务器连接失败，请检查网络后重试'}</p>`;
+                    if(stream) stream.getTracks().forEach(track => track.stop());
+                    }
+                };
+                
+                mediaRecorder.start();
+            } catch (error) {
+                console.error('录音错误:', error);
+                const errorMsg = error.name === 'NotAllowedError' ? 
+                    '请点击浏览器地址栏左侧的麦克风图标授予权限后重试' : 
+                    `设备错误：${error.message || '未检测到可用麦克风'}`;
+                
+                document.getElementById('analysisResult').innerHTML = `
+                    <h3>录音失败</h3>
+                    <style>
+                        .error-message {
+                            color: #dc3545;
+                            padding: 10px;
+                            border: 1px solid #f5c2c7;
+                            border-radius: 4px;
+                            background: #f8d7da;
+                            margin: 10px 0;
+                        }
+                        
+                        .recording-status {
+                            color: var(--indigo);
+                            padding: 12px;
+                            background: rgba(75, 0, 130, 0.1);
+                            border-radius: 8px;
+                            text-align: center;
+                            animation: pulse 1.5s infinite;
+                        }
+                        
+                        @keyframes pulse {
+                            0% { opacity: 0.8; }
+                            50% { opacity: 0.4; }
+                            100% { opacity: 0.8; }
+                        }
+                    </style>
+                    <p class="error-message">${errorMsg}</p>
+                    <button onclick="location.reload()">刷新页面重试</button>
+                `;
+                
+                if(stream) stream.getTracks().forEach(track => track.stop());
+                document.getElementById('recordButton').disabled = false;
+                document.getElementById('stopButton').disabled = true;
+            }
+        });
+        
+        document.getElementById('stopButton').addEventListener('click', () => {
+            mediaRecorder.stop();
+            document.getElementById('recordButton').disabled = false;
+            document.getElementById('stopButton').disabled = true;
+        });
+        
+        async function generateLyrics() {
+            const theme = document.getElementById('theme').value;
+            const prompt = document.getElementById('prompt').value;
+            const style = document.getElementById('style').value;
+            const button = document.querySelector('button[onclick="generateLyrics()"]');
+            button.disabled = true;
+            button.textContent = '生成中...';
+            try {
+                const response = await fetch('/generate_lyrics', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ theme, prompt, style })
+                });
+                if (!response.ok) throw new Error('请求失败');
+                const data = await response.json();
+                document.getElementById('lyricsOutput').value = data.lyrics;
+            } catch (error) {
+                // 使用模拟数据作为临时解决方案
+                const mockLyrics = {
+                    'traditional': '阿依妞妞跳月来
+月亮星星共徘徊
+彝家娃娃歌声亮
+传统儿歌传心怀',
+                    'festival': '火把节里火光摇
+手拉手儿跳月谣
+彝家儿女齐欢唱
+节日儿歌乐淘淘',
+                    'lullaby': '小宝贝呀快睡觉
+月亮婆婆轻轻摇
+彝家摇篮曲儿甜
+妈妈唱着伴你笑',
+                    'educational': '小竹篓呀装满爱
+彝文识字乐开怀
+山川草木都是课
+教育儿歌传帮带'
+                };
+                const mockData = {lyrics: mockLyrics[style] || '没有找到相关风格的歌词'}; 
+                document.getElementById('lyricsOutput').value = `接口请求失败，使用模拟数据：\n${mockData.lyrics}`;
+                console.log('使用模拟数据:', mockData);
+            } finally {
+                button.disabled = false;
+                button.textContent = '生成歌词';
+            }
+        }
+
+        async function arrangeChords() {
+            const lyrics = document.getElementById('chordsInput').value;
+            const button = document.querySelector('button[onclick="arrangeChords()"]');
+            button.disabled = true;
+            button.textContent = '编排中...';
+            try {
+                const response = await fetch('/arrange_chords', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ lyrics })
+                });
+                if (!response.ok) throw new Error('请求失败');
+                const data = await response.json();
+                document.getElementById('chordsOutput').value = data.chords;
+            } catch (error) {
+                alert('编排和弦失败: ' + error.message);
+                console.error(error);
+            } finally {
+                button.disabled = false;
+                button.textContent = '编排和弦';
+            }
+        }
+
+        async function exportMIDI() {
+            const button = document.querySelector('button[onclick="exportMIDI()"]');
+            button.disabled = true;
+            button.textContent = '导出中...';
+            try {
+                const response = await fetch('/export_midi');
+                if (!response.ok) throw new Error('请求失败');
+                const blob = await response.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'composition.mid';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            } catch (error) {
+                alert('导出MIDI失败: ' + error.message);
+                console.error(error);
+            } finally {
+                button.disabled = false;
+                button.textContent = '导出MIDI';
+            }
+        }
+    </script>
+</body>
+</html>

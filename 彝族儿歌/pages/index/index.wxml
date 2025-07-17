@@ -1,0 +1,5 @@
+<view class="container">
+    <text class="title">彝族儿歌音乐创作系统</text>
+    <button class="function-btn" bindtap="gotoVoiceAnalysis">音色分析</button>
+    <button class="function-btn" bindtap="gotoLyricsGenerator">歌词生成</button>
+</view>
