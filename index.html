@@ -1,0 +1,1148 @@
+<html lang="zh-CN"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彝族儿歌创作与翻译平台</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#CD5C5C',
+                        secondary: '#F0E68C',
+                        accent: '#4682B4',
+                        dark: '#2D3748',
+                        light: '#F7FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        yi: ['"Noto Sans Yi"', 'sans-serif']
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .bg-gradient-yi {
+                background: linear-gradient(135deg, #CD5C5C 0%, #F0E68C 100%);
+            }
+            .transition-all-300 {
+                transition: all 0.3s ease;
+            }
+        }
+    </style>
+</head>
+<body class="bg-light text-dark min-h-screen flex flex-col">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fa fa-music text-primary text-2xl"></i>
+                <h1 class="text-xl md:text-2xl font-bold text-primary">彝呀呀儿歌智能创作系统</h1>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="font-medium hover:text-primary transition-all-300">首页</a>
+                <a href="#features" class="font-medium hover:text-primary transition-all-300">功能</a>
+                <a href="#lyrics-generator" class="font-medium hover:text-primary transition-all-300">歌词生成</a>
+                <a href="#translation" class="font-medium hover:text-primary transition-all-300">翻译</a>
+                <a href="#about" class="font-medium hover:text-primary transition-all-300">关于</a>
+            </div>
+            <button class="md:hidden text-dark text-xl" id="menu-toggle">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <!-- 移动端菜单 -->
+        <div class="md:hidden hidden bg-white w-full" id="mobile-menu">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+                <a href="#home" class="font-medium hover:text-primary transition-all-300 py-2">首页</a>
+                <a href="#features" class="font-medium hover:text-primary transition-all-300 py-2">功能</a>
+                <a href="#lyrics-generator" class="font-medium hover:text-primary transition-all-300 py-2">歌词生成</a>
+                <a href="#translation" class="font-medium hover:text-primary transition-all-300 py-2">翻译</a>
+                <a href="#about" class="font-medium hover:text-primary transition-all-300 py-2">关于</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页部分 -->
+    <section id="home" class="relative bg-gradient-yi py-16 md:py-24">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-[clamp(2rem,5vw,3.5rem)] font-bold text-white leading-tight text-shadow">
+                        传承彝族文化<br>创作美好儿歌
+                    </h2>
+                    <p class="text-white text-lg md:text-xl mt-6 max-w-lg">使用彝韵算法，分析您的音色特点，生成具有彝族特色的原创儿歌歌词，并支持彝汉双语互译。</p>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="#lyrics-generator" class="bg-white text-primary px-6 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                            开始创作
+                        </a>
+                        <a href="#features" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white/10 transition-all duration-300">
+                            了解更多
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/eac4605ae48c479e943c500c58ff81a0~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753363463&amp;x-signature=agDAJb8CdUKdwxmm2J1xRxLzfoA%3D" alt="彝族文化展示" class="rounded-lg shadow-2xl w-full h-auto object-cover">
+                        <div class="absolute -bottom-4 -left-4 bg-white p-3 rounded-lg shadow-lg">
+                            <div class="flex items-center space-x-2">
+                                <i class="fa fa-music text-primary"></i>
+                                <span class="font-medium">+67</span>
+                                <span class="text-sm">彝族儿歌</span>
+                            </div>
+                        </div>
+                        <div class="absolute -top-4 -right-4 bg-white p-3 rounded-lg shadow-lg">
+                            <div class="flex items-center space-x-2">
+                                <i class="fa fa-users text-primary"></i>
+                                <span class="font-medium">500+</span>
+                                <span class="text-sm">用户喜爱</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-light to-transparent"></div>
+    </section>
+
+    <!-- 功能部分 -->
+    <section id="features" class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">平台功能</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">我们的平台提供多种功能，帮助您创作出具有彝族特色的优秀儿歌</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 功能卡片1 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <div class="relative">
+                            <i class="fa fa-microphone text-primary text-2xl"></i>
+                            <span class="absolute -top-1 -right-1 text-xs bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center">音</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">音色分析</h3>
+                    <p class="text-gray-600">通过先进的音频处理技术，分析您的录音音色特点，为歌词创作提供参考。</p>
+                </div>
+                
+                <!-- 功能卡片2 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-pencil text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">智能歌词生成</h3>
+                    <p class="text-gray-600">基于彝族文化特色和您的音色特点，生成富有民族风情的原创儿歌歌词。</p>
+                </div>
+                
+                <!-- 功能卡片3 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-language text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">彝汉双语翻译</h3>
+                    <p class="text-gray-600">支持彝族文字和汉字的互相翻译，方便文化传承和交流。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 歌词生成部分 -->
+    <section id="lyrics-generator" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">彝族儿歌歌词生成</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">录制您的声音，我们将分析您的音色特点，生成专属的彝族儿歌歌词</p>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-xl p-6 md:p-8 max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">录音分析</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">录音时长</label>
+                                <div class="flex items-center">
+                                    <input type="range" min="5" max="30" value="15" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary" id="recording-length">
+                                    <span class="ml-2 text-sm text-gray-500" id="length-value">15秒</span>
+                                </div>
+                            </div>
+                            
+                            <div class="relative">
+                                <button id="record-button" class="w-full bg-primary text-white py-3 rounded-lg font-medium shadow-md hover:bg-primary/90 transition-all duration-300 flex items-center justify-center">
+                                    <i class="fa fa-microphone mr-2"></i> 开始录音
+                                </button>
+                                <div id="recording-indicator" class="hidden absolute inset-0 bg-primary/20 rounded-lg flex items-center justify-center">
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-red-500 rounded-full animate-pulse mr-2"></div>
+                                        <span class="text-white font-medium">录音中...</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="audio-player-container" class="hidden">
+                                <audio id="audio-player" controls="" class="w-full"></audio>
+                                <button id="analyze-button" class="w-full mt-3 bg-accent text-white py-3 rounded-lg font-medium shadow-md hover:bg-accent/90 transition-all duration-300">
+                                    <i class="fa fa-bar-chart mr-2"></i> 分析音色
+                                </button>
+                            </div>
+                            
+                            <div id="analysis-results" class="hidden mt-4 p-4 bg-gray-50 rounded-lg">
+                                <h4 class="font-medium mb-2">音色分析结果</h4>
+                                <div class="space-y-2">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">音调范围</span>
+                                        <span class="font-medium" id="pitch-range">中高音</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">音色特点</span>
+                                        <span class="font-medium" id="timbre-type">明亮、清脆</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">情感倾向</span>
+                                        <span class="font-medium" id="emotion">欢快、活泼</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">歌词生成</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">歌词主题</label>
+                                <input type="text" placeholder="例如：家乡、动物、节日" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300" id="lyrics-theme">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">歌词风格</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300" id="lyrics-style">
+                                    <option value="traditional">传统风格</option>
+                                    <option value="modern">现代风格</option>
+                                    <option value="story">叙事风格</option>
+                                    <option value="lullaby">摇篮曲风格</option>
+                                </select>
+                            </div>
+                            
+                            <button id="generate-button" class="w-full bg-primary text-white py-3 rounded-lg font-medium shadow-md hover:bg-primary/90 transition-all duration-300 flex items-center justify-center" disabled="">
+                                <i class="fa fa-magic mr-2"></i> 生成歌词
+                            </button>
+                            
+                            <div id="generated-lyrics" class="hidden mt-4 p-4 bg-gray-50 rounded-lg border border-gray-200 min-h-[200px]">
+                                <h4 class="font-medium mb-2">生成的歌词</h4>
+                                <div class="space-y-2" id="lyrics-content">
+                                    <!-- 歌词内容将在这里显示 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 翻译部分 -->
+    <section id="translation" class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">彝汉双语翻译</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">输入彝族文字或汉字，我们将为您提供准确的翻译</p>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-xl p-6 md:p-8 max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <label class="block text-sm font-medium text-gray-700">原文</label>
+                            <div class="flex space-x-2">
+                                <button class="text-gray-500 hover:text-primary transition-colors" id="clear-source">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                                <button class="text-gray-500 hover:text-primary transition-colors" id="voice-input-source">
+                                    <i class="fa fa-microphone"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <textarea id="source-text" rows="8" placeholder="请输入要翻译的文本..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 resize-none"></textarea>
+                            <div class="absolute right-3 bottom-3 text-xs text-gray-400">
+                                <span id="source-count">0</span>/500
+                            </div>
+                        </div>
+                        <div class="mt-3 flex justify-between">
+                            <div class="flex items-center space-x-2">
+                                <input type="radio" id="to-yi" name="translation-direction" checked="" class="accent-primary">
+                                <label for="to-yi" class="text-sm text-gray-700">汉译彝</label>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <input type="radio" id="to-chinese" name="translation-direction" class="accent-primary">
+                                <label for="to-chinese" class="text-sm text-gray-700">彝译汉</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <label class="block text-sm font-medium text-gray-700">译文</label>
+                            <div class="flex space-x-2">
+                                <button class="text-gray-500 hover:text-primary transition-colors" id="copy-target">
+                                    <i class="fa fa-copy"></i>
+                                </button>
+                                <button class="text-gray-500 hover:text-primary transition-colors" id="voice-output-target">
+                                    <i class="fa fa-volume-up"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div id="target-text" class="w-full px-4 py-3 border border-gray-300 rounded-lg bg-gray-50 min-h-[150px]">
+                                <!-- 翻译结果将在这里显示 -->
+                                <div class="flex items-center justify-center h-[150px] text-gray-400">
+                                    翻译结果将显示在这里
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 text-center">
+                    <button id="translate-button" class="px-8 py-3 bg-primary text-white rounded-lg font-medium shadow-md hover:bg-primary/90 transition-all duration-300">
+                        <i class="fa fa-language mr-2"></i> 开始翻译
+                    </button>
+                </div>
+                
+                <div id="translation-examples" class="mt-8 pt-8 border-t border-gray-200">
+                    <h4 class="font-medium mb-4">常用翻译示例</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-3 bg-gray-50 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors" data-source="你好" data-target="ꇢꇩ">
+                            <div class="text-sm text-gray-500">汉语</div>
+                            <div class="font-medium">你好</div>
+                            <div class="text-sm text-gray-500 mt-2">彝语</div>
+                            <div class="font-medium yi-font">ꇢꇩ</div>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors" data-source="谢谢" data-target="ꌺꇁ">
+                            <div class="text-sm text-gray-500">汉语</div>
+                            <div class="font-medium">谢谢</div>
+                            <div class="text-sm text-gray-500 mt-2">彝语</div>
+                            <div class="font-medium yi-font">ꌺꇁ</div>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors" data-source="我爱你" data-target="ꐥꇩꑳ">
+                            <div class="text-sm text-gray-500">汉语</div>
+                            <div class="font-medium">我爱你</div>
+                            <div class="text-sm text-gray-500 mt-2">彝语</div>
+                            <div class="font-medium yi-font">ꐥꇩꑳ</div>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors" data-source="彝族" data-target="ꆈꌠ">
+                            <div class="text-sm text-gray-500">汉语</div>
+                            <div class="font-medium">彝族</div>
+                            <div class="text-sm text-gray-500 mt-2">彝语</div>
+                            <div class="font-medium yi-font">ꆈꌠ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于部分 -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">关于我们</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">了解我们的平台背景和愿景</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
+                <div>
+                    <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/b62bf87e315c4a5eb0020a33af7cbc77~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753364185&amp;x-signature=Ogn4QN3frHhJZvxlo9WYzA3oJAU%3D" alt="彝族文化展示" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">传承民族文化，创新儿歌创作</h3>
+                    <p class="text-gray-600 mb-4">
+                        彝族是中国具有悠久历史和独特文化的少数民族之一，拥有丰富的民间文学和音乐传统。我们的平台致力于利用现代技术，将彝族文化与儿童教育相结合，创作出既富有民族特色又符合现代审美的优秀儿歌。
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        通过音色分析和智能歌词生成技术，我们希望能够帮助更多人了解和喜爱彝族文化，同时也为彝族文化的传承和发展做出贡献。
+                    </p>
+                    <div class="mt-6 flex space-x-4">
+                        <a href="#" class="text-primary hover:text-primary/80 transition-colors">
+                            <i class="fa fa-weibo text-xl"></i>
+                        </a>
+                        <a href="#" class="text-primary hover:text-primary/80 transition-colors">
+                            <i class="fa fa-wechat text-xl"></i>
+                        </a>
+                        <a href="#" class="text-primary hover:text-primary/80 transition-colors">
+                            <i class="fa fa-youtube-play text-xl"></i>
+                        </a>
+                        <a href="#" class="text-primary hover:text-primary/80 transition-colors">
+                            <i class="fa fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 max-w-6xl mx-auto">
+                <h3 class="text-2xl font-bold text-center mb-8">常见问题</h3>
+                
+                <div class="space-y-4" id="faq-container">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-4 text-left font-medium hover:bg-gray-50 transition-colors">
+                            <span>如何使用音色分析功能？</span>
+                            <i class="fa fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-4 pt-0 border-t border-gray-100">
+                            <p class="text-gray-600">
+                                点击"开始录音"按钮，按照提示录制您的声音。录音完成后，点击"分析音色"按钮，系统将分析您的音色特点，并为歌词生成提供参考。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-4 text-left font-medium hover:bg-gray-50 transition-colors">
+                            <span>生成的歌词版权归谁所有？</span>
+                            <i class="fa fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-4 pt-0 border-t border-gray-100">
+                            <p class="text-gray-600">
+                                用户生成的歌词版权归用户所有。我们鼓励用户自由使用和分享自己创作的儿歌，但请注意尊重他人版权，不要用于商业用途。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-4 text-left font-medium hover:bg-gray-50 transition-colors">
+                            <span>翻译功能支持哪些场景？</span>
+                            <i class="fa fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-4 pt-0 border-t border-gray-100">
+                            <p class="text-gray-600">
+                                我们的翻译功能支持日常用语、儿歌歌词、简单文章等场景的彝汉互译。对于专业领域的术语翻译，可能存在一定的局限性。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-4 text-left font-medium hover:bg-gray-50 transition-colors">
+                            <span>如何保存我生成的歌词？</span>
+                            <i class="fa fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-4 pt-0 border-t border-gray-100">
+                            <p class="text-gray-600">
+                                您可以使用浏览器的复制功能复制生成的歌词，然后粘贴到您喜欢的文本编辑器中保存。我们也计划在未来版本中添加直接保存和分享功能。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fa fa-music text-primary text-2xl"></i>
+                        <h3 class="text-xl font-bold">彝族儿歌创作与翻译平台</h3>
+                    </div>
+                    <p class="text-gray-400">传承彝族文化，创新儿歌创作，让民族音乐焕发新活力——彝曲飞扬童梦飞扬。微信公众号搜索--“彝呀呀”了解更多故事</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-medium mb-4">快速链接</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-primary transition-colors">首页</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-primary transition-colors">功能</a></li>
+                        <li><a href="#lyrics-generator" class="text-gray-400 hover:text-primary transition-colors">歌词生成</a></li>
+                        <li><a href="#translation" class="text-gray-400 hover:text-primary transition-colors">翻译</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-primary transition-colors">关于</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-medium mb-4">资源</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">彝族文化</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">儿歌库</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">使用教程</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">常见问题</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-medium mb-4">联系我们</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center space-x-2">
+                            <i class="fa fa-envelope-o text-primary"></i>
+                            <a href="mailto:contact@yichildrenssong.com" class="text-gray-400 hover:text-primary transition-colors">3257901427@qq.com</a>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa fa-phone text-primary"></i>
+                            <span class="text-gray-400">+86&nbsp; 15120315887</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa fa-map-marker text-primary"></i>
+                            <span class="text-gray-400">毕节幼儿高等专科学校</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2025 彝族儿歌创作与翻译平台 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 z-50">
+        <i class="fa fa-chevron-up"></i>
+    </button>
+
+    <script>
+        // 移动端菜单切换
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // 滚动导航栏效果
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('py-2');
+                navbar.classList.remove('py-3');
+                navbar.classList.add('bg-white/95');
+                navbar.classList.add('backdrop-blur-sm');
+            } else {
+                navbar.classList.remove('py-2');
+                navbar.classList.add('py-3');
+                navbar.classList.remove('bg-white/95');
+                navbar.classList.remove('backdrop-blur-sm');
+            }
+        });
+        
+        // 回到顶部按钮
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.add('opacity-0', 'invisible');
+                backToTopButton.classList.remove('opacity-100', 'visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // 关闭移动菜单
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // FAQ切换
+        document.querySelectorAll('.faq-toggle').forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+        
+        // 录音功能
+        const recordButton = document.getElementById('record-button');
+        const recordingIndicator = document.getElementById('recording-indicator');
+        const audioPlayerContainer = document.getElementById('audio-player-container');
+        const audioPlayer = document.getElementById('audio-player');
+        const analyzeButton = document.getElementById('analyze-button');
+        const analysisResults = document.getElementById('analysis-results');
+        const generateButton = document.getElementById('generate-button');
+        const recordingLength = document.getElementById('recording-length');
+        const lengthValue = document.getElementById('length-value');
+        const generatedLyrics = document.getElementById('generated-lyrics');
+        const lyricsContent = document.getElementById('lyrics-content');
+        
+        let mediaRecorder;
+        let audioChunks = [];
+        
+        recordingLength.addEventListener('input', () => {
+            lengthValue.textContent = `${recordingLength.value}秒`;
+        });
+        
+        recordButton.addEventListener('click', async () => {
+            if (recordButton.textContent.includes('开始录音')) {
+                try {
+                    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                    
+                    mediaRecorder = new MediaRecorder(stream);
+                    
+                    audioChunks = [];
+                    
+                    mediaRecorder.addEventListener('dataavailable', event => {
+                        audioChunks.push(event.data);
+                    });
+                    
+                    mediaRecorder.addEventListener('stop', () => {
+                        const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                        const audioUrl = URL.createObjectURL(audioBlob);
+                        audioPlayer.src = audioUrl;
+                        
+                        audioPlayerContainer.classList.remove('hidden');
+                        recordingIndicator.classList.add('hidden');
+                        recordButton.innerHTML = '<i class="fa fa-microphone mr-2"></i> 开始录音';
+                    });
+                    
+                    recordingIndicator.classList.remove('hidden');
+                    recordButton.innerHTML = '<i class="fa fa-stop mr-2"></i> 停止录音';
+                    
+                    mediaRecorder.start();
+                    
+                    // 自动停止录音
+                    setTimeout(() => {
+                        if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+                            mediaRecorder.stop();
+                            stream.getTracks().forEach(track => track.stop());
+                        }
+                    }, recordingLength.value * 1000);
+                    
+                } catch (error) {
+                    console.error('录音失败:', error);
+                    alert('录音失败，请确保您已授予麦克风权限。');
+                    recordingIndicator.classList.add('hidden');
+                    recordButton.innerHTML = '<i class="fa fa-microphone mr-2"></i> 开始录音';
+                }
+            } else {
+                if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+                    mediaRecorder.stop();
+                    const stream = mediaRecorder.stream;
+                    stream.getTracks().forEach(track => track.stop());
+                }
+            }
+        });
+        
+        analyzeButton.addEventListener('click', () => {
+            // 模拟音色分析
+            analysisResults.classList.remove('hidden');
+            generateButton.disabled = false;
+            
+            // 添加分析动画
+            const analysisItems = analysisResults.querySelectorAll('.font-medium');
+            analysisItems.forEach(item => {
+                item.textContent = '分析中...';
+            });
+            
+            setTimeout(() => {
+                document.getElementById('pitch-range').textContent = ['低音', '中音', '中高音', '高音'][Math.floor(Math.random() * 4)];
+                document.getElementById('timbre-type').textContent = ['明亮、清脆', '浑厚、有力', '柔和、温暖', '清澈、通透'][Math.floor(Math.random() * 4)];
+                document.getElementById('emotion').textContent = ['欢快、活泼', '温馨、抒情', '沉稳、庄重', '神秘、悠远'][Math.floor(Math.random() * 4)];
+            }, 1500);
+        });
+        
+        generateButton.addEventListener('click', () => {
+            const theme = document.getElementById('lyrics-theme').value.trim().toLowerCase();
+            const style = document.getElementById('lyrics-style').value;
+            
+            if (!theme) {
+                alert('请输入歌词主题');
+                return;
+            }
+            
+            // 显示加载状态
+            lyricsContent.innerHTML = '<div class="flex items-center justify-center h-20 text-gray-400">生成中...</div>';
+            generatedLyrics.classList.remove('hidden');
+            
+            // 模拟歌词生成
+            setTimeout(() => {
+                let lyrics = '';
+                
+                // 根据不同主题和风格生成不同歌词
+                if (theme.includes('火把节')) {
+                    if (style === 'traditional') {
+                        lyrics = `
+                        <p>火把节的夜晚多辉煌，</p>
+                        <p>熊熊火焰照四方。</p>
+                        <p>彝族儿女手拉手，</p>
+                        <p>围着篝火跳起来。</p>
+                        <p></p>
+                        <p>火把节的传说多神奇，</p>
+                        <p>英雄故事传千年。</p>
+                        <p>美酒飘香歌声亮，</p>
+                        <p>祝福生活更美好。</p>
+                        `;
+                    } else if (style === 'modern') {
+                        lyrics = `
+                        <p>火把点亮彝家的夜晚，</p>
+                        <p>手机记录这美好瞬间。</p>
+                        <p>传统与现代在这里交融，</p>
+                        <p>我们的节日更精彩。</p>
+                        <p></p>
+                        <p>抖音快手传递快乐，</p>
+                        <p>世界看到我们的风采。</p>
+                        <p>火把节的热情永不灭，</p>
+                        <p>代代相传到永远。</p>
+                        `;
+                    } else if (style === 'story') {
+                        lyrics = `
+                        <p>很久很久以前，</p>
+                        <p>有个勇敢的彝族少年。</p>
+                        <p>他为了拯救家乡，</p>
+                        <p>与恶魔展开了激烈战斗。</p>
+                        <p></p>
+                        <p>火把是他的武器，</p>
+                        <p>智慧是他的力量。</p>
+                        <p>最终他战胜了恶魔，</p>
+                        <p>人们为了纪念他，</p>
+                        <p>每年都点燃火把。</p>
+                        `;
+                    } else if (style === 'lullaby') {
+                        lyrics = `
+                        <p>宝贝快睡吧，</p>
+                        <p>听妈妈讲火把节的故事。</p>
+                        <p>熊熊的火焰，</p>
+                        <p>是祖先的祝福。</p>
+                        <p></p>
+                        <p>宝贝快睡吧，</p>
+                        <p>明天我们一起去玩火。</p>
+                        <p>但要记住安全第一，</p>
+                        <p>快乐过节。</p>
+                        `;
+                    }
+                } else if (theme.includes('索玛花')) {
+                    if (style === 'traditional') {
+                        lyrics = `
+                        <p>索玛花开满山岗，</p>
+                        <p>彝家儿女喜洋洋。</p>
+                        <p>花儿红似火，</p>
+                        <p>映红了我们的脸庞。</p>
+                        <p></p>
+                        <p>索玛花啊索玛花，</p>
+                        <p>你是我们的骄傲。</p>
+                        <p>愿你永远开放，</p>
+                        <p>祝福我们的家乡。</p>
+                        `;
+                    } else if (style === 'modern') {
+                        lyrics = `
+                        <p>索玛花盛开在春天，</p>
+                        <p>游客纷纷来观赏。</p>
+                        <p>绿水青山就是金山银山，</p>
+                        <p>我们要好好保护它。</p>
+                        <p></p>
+                        <p>索玛花的美丽人人爱，</p>
+                        <p>彝族的文化传四方。</p>
+                        <p>欢迎大家来做客，</p>
+                        <p>感受我们的热情。</p>
+                        `;
+                    } else if (style === 'story') {
+                        lyrics = `
+                        <p>在高高的山上，</p>
+                        <p>生长着一朵美丽的索玛花。</p>
+                        <p>它经历了风雨的洗礼，</p>
+                        <p>依然绽放得那么鲜艳。</p>
+                        <p></p>
+                        <p>有个彝族小姑娘，</p>
+                        <p>每天都来照顾它。</p>
+                        <p>她和索玛花成了好朋友，</p>
+                        <p>一起度过了快乐的时光。</p>
+                        `;
+                    } else if (style === 'lullaby') {
+                        lyrics = `
+                        <p>宝贝快睡吧，</p>
+                        <p>索玛花在窗外轻轻摇晃。</p>
+                        <p>它像妈妈的手，</p>
+                        <p>抚摸着你的脸庞。</p>
+                        <p></p>
+                        <p>宝贝快睡吧，</p>
+                        <p>索玛花会守护你进入梦乡。</p>
+                        <p>做个甜甜的梦，</p>
+                        <p>明天又是美好的一天。</p>
+                        `;
+                    }
+                } else if (theme.includes('家乡')) {
+                    if (style === 'traditional') {
+                        lyrics = `
+                        <p>凉山的山水美如画，</p>
+                        <p>彝族的家乡我最爱。</p>
+                        <p>黄茅埂的云雾缭绕，</p>
+                        <p>安宁河的水潺潺流。</p>
+                        <p></p>
+                        <p>家乡的土地肥沃，</p>
+                        <p>养育了我们一代又一代。</p>
+                        <p>无论我走到哪里，</p>
+                        <p>永远不会忘记我的家。</p>
+                        `;
+                    } else if (style === 'modern') {
+                        lyrics = `
+                        <p>家乡的变化真大呀，</p>
+                        <p>高楼大厦拔地起。</p>
+                        <p>高速公路通四方，</p>
+                        <p>网络连接着世界。</p>
+                        <p></p>
+                        <p>但我最爱的还是那片田野，</p>
+                        <p>那里有我童年的回忆。</p>
+                        <p>家乡的味道永远不变，</p>
+                        <p>永远留在我心里。</p>
+                        `;
+                    } else if (style === 'story') {
+                        lyrics = `
+                        <p>从前有个小男孩，</p>
+                        <p>他离开家乡去远方求学。</p>
+                        <p>在外面的世界里，</p>
+                        <p>他遇到了很多困难和挑战。</p>
+                        <p></p>
+                        <p>但他始终记得家乡的教导，</p>
+                        <p>勇敢地面对一切。</p>
+                        <p>最终他学成归来，</p>
+                        <p>为家乡的发展贡献自己的力量。</p>
+                        `;
+                    } else if (style === 'lullaby') {
+                        lyrics = `
+                        <p>宝贝快睡吧，</p>
+                        <p>听妈妈唱家乡的歌。</p>
+                        <p>家乡的月亮又圆又亮，</p>
+                        <p>照着我们进入梦乡。</p>
+                        <p></p>
+                        <p>宝贝快睡吧，</p>
+                        <p>将来你要建设家乡。</p>
+                        <p>让它变得更加美丽，</p>
+                        <p>成为人人向往的地方。</p>
+                        `;
+                    }
+                } else if (theme.includes('动物')) {
+                    if (style === 'traditional') {
+                        lyrics = `
+                        <p>山上的骏马跑得快，</p>
+                        <p>草原上的牛羊肥。</p>
+                        <p>树上的鸟儿唱得欢，</p>
+                        <p>彝族的生活多美好。</p>
+                        <p></p>
+                        <p>动物是我们的朋友，</p>
+                        <p>我们要好好保护它们。</p>
+                        <p>让它们在大自然中自由生长，</p>
+                        <p>和我们一起共享这片蓝天。</p>
+                        `;
+                    } else if (style === 'modern') {
+                        lyrics = `
+                        <p>动物园里真热闹，</p>
+                        <p>各种动物真奇妙。</p>
+                        <p>大熊猫憨态可掬，</p>
+                        <p>长颈鹿脖子真长。</p>
+                        <p></p>
+                        <p>但我更爱家乡的动物，</p>
+                        <p>它们自由自在地生活。</p>
+                        <p>让我们一起行动起来，</p>
+                        <p>保护它们的家园。</p>
+                        `;
+                    } else if (style === 'story') {
+                        lyrics = `
+                        <p>有一天，小猴子在树上玩耍，</p>
+                        <p>不小心掉进了河里。</p>
+                        <p>小鱼看到了，</p>
+                        <p>赶紧游过来救它。</p>
+                        <p></p>
+                        <p>小猴子很感激小鱼，</p>
+                        <p>从此它们成了好朋友。</p>
+                        <p>这个故事告诉我们，</p>
+                        <p>动物之间也要互相帮助。</p>
+                        `;
+                    } else if (style === 'lullaby') {
+                        lyrics = `
+                        <p>宝贝快睡吧，</p>
+                        <p>动物们都已经睡了。</p>
+                        <p>小鸟在树上做着梦，</p>
+                        <p>小羊在羊圈里打鼾。</p>
+                        <p></p>
+                        <p>宝贝快睡吧，</p>
+                        <p>明天我们一起去看动物。</p>
+                        <p>和它们一起玩耍，</p>
+                        <p>度过快乐的一天。</p>
+                        `;
+                    }
+                } else if (theme.includes('节日')) {
+                    if (style === 'traditional') {
+                        lyrics = `
+                        <p>彝族的节日真热闹，</p>
+                        <p>男女老少齐欢笑。</p>
+                        <p>穿上漂亮的衣裳，</p>
+                        <p>跳起欢快的舞蹈。</p>
+                        <p></p>
+                        <p>美酒敬给长辈，</p>
+                        <p>祝福大家身体好。</p>
+                        <p>节日的欢乐传四方，</p>
+                        <p>彝族的文化放光芒。</p>
+                        `;
+                    } else if (style === 'modern') {
+                        lyrics = `
+                        <p>节日里的彝乡真热闹，</p>
+                        <p>游客们纷纷来报到。</p>
+                        <p>传统美食香飘万里，</p>
+                        <p>特色表演真精彩。</p>
+                        <p></p>
+                        <p>手机拍照发朋友圈，</p>
+                        <p>让世界了解我们的节日。</p>
+                        <p>欢迎大家常来玩，</p>
+                        <p>体验彝族的热情。</p>
+                        `;
+                    } else if (style === 'story') {
+                        lyrics = `
+                        <p>很久很久以前，</p>
+                        <p>彝族人民为了庆祝丰收，</p>
+                        <p>举办了一场盛大的节日。</p>
+                        <p>大家一起唱歌跳舞，</p>
+                        <p>分享丰收的喜悦。</p>
+                        <p></p>
+                        <p>从那以后，</p>
+                        <p>每年的这个时候，</p>
+                        <p>彝族人民都会举行庆祝活动，</p>
+                        <p>传承这个美好的传统。</p>
+                        `;
+                    } else if (style === 'lullaby') {
+                        lyrics = `
+                        <p>宝贝快睡吧，</p>
+                        <p>节日的烟花还在绽放。</p>
+                        <p>但现在是睡觉的时间，</p>
+                        <p>明天还有更多的欢乐。</p>
+                        <p></p>
+                        <p>宝贝快睡吧，</p>
+                        <p>梦见自己在节日里玩耍。</p>
+                        <p>穿上漂亮的衣服，</p>
+                        <p>成为最快乐的小宝贝。</p>
+                        `;
+                    }
+                } else {
+                    // 默认歌词
+                    if (style === 'traditional') {
+                        lyrics = `
+                        <p>凉山的太阳红彤彤，</p>
+                        <p>彝族的儿女笑盈盈。</p>
+                        <p>火把节的火焰高高燃，</p>
+                        <p>祖先的智慧传万代。</p>
+                        <p></p>
+                        <p>黄茅埂的风儿轻轻吹，</p>
+                        <p>索玛花遍地开。</p>
+                        <p>阿咪子的歌声多悠扬，</p>
+                        <p>唱着家乡的美。</p>
+                        `;
+                    } else if (style === 'modern') {
+                        lyrics = `
+                        <p>古老的山寨新面貌，</p>
+                        <p>科技带来新希望。</p>
+                        <p>我们手拉手向前走，</p>
+                        <p>彝乡明天更美好。</p>
+                        <p></p>
+                        <p>手机里传来喜讯，</p>
+                        <p>网络连接着世界。</p>
+                        <p>但我们不会忘记，</p>
+                        <p>祖先留下的歌谣。</p>
+                        `;
+                    } else if (style === 'story') {
+                        lyrics = `
+                        <p>从前有个小牧童，</p>
+                        <p>赶着羊群上山坡。</p>
+                        <p>他唱起了彝族的歌，</p>
+                        <p>歌声飘向云深处。</p>
+                        <p></p>
+                        <p>突然来了暴风雨，</p>
+                        <p>牧童着急不知所措。</p>
+                        <p>这时飞来一只雄鹰，</p>
+                        <p>带着他安全回家。</p>
+                        `;
+                    } else if (style === 'lullaby') {
+                        lyrics = `
+                        <p>宝贝快睡吧，</p>
+                        <p>月亮出来了。</p>
+                        <p>妈妈唱着古老的歌，</p>
+                        <p>伴你进入梦乡。</p>
+                        <p></p>
+                        <p>星星在眨眼，</p>
+                        <p>风儿在轻唱。</p>
+                        <p>彝族的摇篮曲，</p>
+                        <p>永远在你身旁。</p>
+                        `;
+                    }
+                }
+                
+                lyricsContent.innerHTML = lyrics;
+            }, 2000);
+        });
+        
+        // 翻译功能
+        const sourceText = document.getElementById('source-text');
+        const targetText = document.getElementById('target-text');
+        const translateButton = document.getElementById('translate-button');
+        const sourceCount = document.getElementById('source-count');
+        const clearSource = document.getElementById('clear-source');
+        const copyTarget = document.getElementById('copy-target');
+        const toYi = document.getElementById('to-yi');
+        const toChinese = document.getElementById('to-chinese');
+        const voiceInputSource = document.getElementById('voice-input-source');
+        const voiceOutputTarget = document.getElementById('voice-output-target');
+        
+        // 字数统计
+        sourceText.addEventListener('input', () => {
+            sourceCount.textContent = sourceText.value.length;
+            
+            if (sourceText.value.length > 500) {
+                sourceText.value = sourceText.value.substring(0, 500);
+                sourceCount.textContent = 500;
+            }
+        });
+        
+        // 清空原文
+        clearSource.addEventListener('click', () => {
+            sourceText.value = '';
+            sourceCount.textContent = '0';
+        });
+        
+        // 复制译文
+        copyTarget.addEventListener('click', () => {
+            const textToCopy = targetText.textContent.trim();
+            
+            if (textToCopy && textToCopy !== '翻译结果将显示在这里') {
+                navigator.clipboard.writeText(textToCopy)
+                    .then(() => {
+                        alert('译文已复制到剪贴板');
+                    })
+                    .catch(err => {
+                        console.error('复制失败:', err);
+                        alert('复制失败，请手动复制');
+                    });
+            }
+        });
+        
+        // 翻译按钮
+        translateButton.addEventListener('click', () => {
+            const text = sourceText.value.trim();
+            
+            if (!text) {
+                alert('请输入要翻译的文本');
+                return;
+            }
+            
+            // 显示加载状态
+            targetText.innerHTML = '<div class="flex items-center justify-center h-[150px] text-gray-400">翻译中...</div>';
+            
+            // 模拟翻译
+            setTimeout(() => {
+                let translation = '';
+                
+                if (toYi.checked) {
+                    // 汉译彝
+                    translation = text
+                        .replace(/你好/g, 'ꇢꇩ')
+                        .replace(/谢谢/g, 'ꌺꇁ')
+                        .replace(/我爱你/g, 'ꐥꇩꑳ')
+                        .replace(/彝族/g, 'ꆈꌠ')
+                        .replace(/中国/g, 'ꏃꍏ')
+                        .replace(/太阳/g, 'ꆪ')
+                        .replace(/月亮/g, 'ꆊ')
+                        .replace(/星星/g, 'ꀕꀉ')
+                        .replace(/火把节/g, 'ꉘꋍꑳ')
+                        .replace(/索玛花/g, 'ꎭꂷꄮ')
+                        .replace(/家乡/g, 'ꃅꇗ')
+                        .replace(/动物/g, 'ꀋꁧ')
+                        .replace(/节日/g, 'ꉘꋍ');
+                } else {
+                    // 彝译汉
+                    translation = text
+                        .replace(/ꇢꇩ/g, '你好')
+                        .replace(/ꌺꇁ/g, '谢谢')
+                        .replace(/ꐥꇩꑳ/g, '我爱你')
+                        .replace(/ꆈꌠ/g, '彝族')
+                        .replace(/ꏃꍏ/g, '中国')
+                        .replace(/ꆪ/g, '太阳')
+                        .replace(/ꆊ/g, '月亮')
+                        .replace(/ꀕꀉ/g, '星星')
+                        .replace(/ꉘꋍꑳ/g, '火把节')
+                        .replace(/ꎭꂷꄮ/g, '索玛花')
+                        .replace(/ꃅꇗ/g, '家乡')
+                        .replace(/ꀋꁧ/g, '动物')
+                        .replace(/ꉘꋍ/g, '节日');
+                }
+                
+                targetText.textContent = translation || '无法翻译此内容';
+            }, 1500);
+        });
+        
+        // 点击翻译示例
+        document.querySelectorAll('[data-source]').forEach(item => {
+            item.addEventListener('click', () => {
+                sourceText.value = item.getAttribute('data-source');
+                sourceCount.textContent = sourceText.value.length;
+                
+                // 根据示例设置翻译方向
+                if (item.hasAttribute('data-target')) {
+                    toYi.checked = true;
+                    toChinese.checked = false;
+                } else {
+                    toYi.checked = false;
+                    toChinese.checked = true;
+                }
+            });
+        });
+        
+        // 语音输入（模拟）
+        voiceInputSource.addEventListener('click', () => {
+            if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
+                alert('语音输入功能将在实际环境中启用');
+                // 实际实现需要使用 SpeechRecognition API
+            } else {
+                alert('您的浏览器不支持语音输入功能');
+            }
+        });
+        
+        // 语音输出（模拟）
+        voiceOutputTarget.addEventListener('click', () => {
+            const text = targetText.textContent.trim();
+            
+            if (text && text !== '翻译结果将显示在这里') {
+                if ('speechSynthesis' in window) {
+                    alert('语音输出功能将在实际环境中启用');
+                    // 实际实现需要使用 SpeechSynthesis API
+                } else {
+                    alert('您的浏览器不支持语音输出功能');
+                }
+            }
+        });
+    </script>
+
+
+    
+    </body></html>
